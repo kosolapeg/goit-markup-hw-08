@@ -1,0 +1,61 @@
+/* Footer form for Subscribe */
+
+.footer-subscribe {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.subscribe-form {
+  display: flex;
+
+  &__email {
+    color: $primary-white-color;
+    font-weight: normal;
+    padding: 15px 16px;
+    margin-right: 12px;
+
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+  }
+
+  &__email::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__submit {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    min-width: 200px;
+    padding: 10px 0;
+    color: $primary-white-color;
+    background-color: $accent-color;
+    border: 0px transparent solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+  }
+
+  &__submit::after {
+    content: '';
+
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

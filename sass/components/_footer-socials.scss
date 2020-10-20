@@ -1,0 +1,30 @@
+.footer-social {
+  margin-right: 70px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $transparent-white-color-01;
+    fill: $primary-white-color;
+
+    transition: 750ms $animation-timing-function;
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon:hover {
+    background-color: $accent-color;
+  }
+}

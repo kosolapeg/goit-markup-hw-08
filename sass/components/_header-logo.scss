@@ -1,0 +1,12 @@
+/* Logo in Header  */
+
+.site-nav__logo {
+  @extend %logo;
+  margin-right: 93px;
+  padding: 24px 0;
+  color: $primary-black-color;
+}
+
+.logo-accent {
+  color: $accent-color;
+}

@@ -1,0 +1,42 @@
+/* Features section */
+
+.features-section {
+  @extend %section;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: calc((100% - 90px) / 4);
+  }
+
+  &__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: $grey-background-color;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}

@@ -1,0 +1,32 @@
+/* Clients section */
+
+.clients-section {
+  @extend %section;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $grey-icons-color;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    fill: $grey-icons-color;
+
+    transition: fill 250ms $animation-timing-function,
+      border-color 250ms $animation-timing-function;
+
+    &:hover {
+      border: 1px solid $accent-color;
+      fill: $accent-color;
+    }
+  }
+}

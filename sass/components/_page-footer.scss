@@ -1,0 +1,25 @@
+/* Page Footer  */
+
+.footer {
+  padding: 60px 0;
+  background-color: $temporary-bg-color;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
+
+@import './footer-contacts';
+@import './footer-socials';
+@import './footer-subscribe';
