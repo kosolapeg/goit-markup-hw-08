@@ -1,10 +1,14 @@
 /* Logo in Header  */
 
-.site-nav__logo {
+.header__logo {
   @extend %logo;
-  margin-right: 93px;
+  margin-right: 88px;
   padding: 24px 0;
   color: $primary-black-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo-accent {

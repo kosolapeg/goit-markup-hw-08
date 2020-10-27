@@ -1,16 +1,32 @@
 /* Portfolio page css */
 
 .portfolio-filter {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filter-list__label {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 15px;
+  }
   padding: 6px 22px;
 
   font-weight: 500;

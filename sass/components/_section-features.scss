@@ -9,15 +9,39 @@
   }
 
   &__item {
-    width: calc((100% - 90px) / 4);
-  }
+    width: 100%;
 
-  &__item:not(:nth-child(4n)) {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+
+      width: calc((100% - 90px) / 4);
+
+      &:not(:nth-child(4n)) {
+        margin-right: 30px;
+      }
+    }
   }
 
   &__icon {
-    padding: 25px 100px;
+    width: 100%;
+    padding: 25px 0;
     margin-bottom: 30px;
     background-color: $grey-background-color;
     border-radius: 4px;
