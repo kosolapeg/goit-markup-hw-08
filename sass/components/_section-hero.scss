@@ -6,7 +6,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../../images/header-480.webp');
+    url('../images/header-480.webp');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -16,7 +16,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../../images/header-480.webp');
+      url('../images/header-480.webp');
   }
 
   @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -25,7 +25,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../../images/header-768.webp');
+      url('../images/header-768.webp');
   }
 
   @media screen and (min-width: 961px) {
@@ -34,7 +34,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../../images/header-1600.webp');
+      url('../images/header-1600.webp');
   }
 
   background-position: center;
