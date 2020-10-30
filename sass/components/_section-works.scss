@@ -10,13 +10,11 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  &__item:not(:nth-child(3n)) {
-    margin-right: 30px;
+    margin: -15px;
   }
 
   &__item {
+    margin: 15px;
     position: relative;
   }
 

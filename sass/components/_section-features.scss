@@ -6,36 +6,19 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 
   &__item {
     width: 100%;
-
-    @media screen and (max-width: 767px) {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
-    }
+    margin: 15px;
 
     @media screen and (min-width: 768px) {
-      width: calc((100% - 30px) / 2);
-      &:not(:nth-child(2n)) {
-        margin-right: 30px;
-      }
-
-      &:not(:nth-last-child(-n + 2)) {
-        margin-bottom: 30px;
-      }
+      width: calc((100% - 60px) / 2);
     }
 
     @media screen and (min-width: 1200px) {
-      margin-bottom: 0px;
-
-      width: calc((100% - 90px) / 4);
-
-      &:not(:nth-child(4n)) {
-        margin-right: 30px;
-      }
+      width: calc((100% - 120px) / 4);
     }
   }
 
