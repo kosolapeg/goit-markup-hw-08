@@ -8,60 +8,86 @@
   </head>
 
   <body>
-<!-- Шапка сайта -->
+    <!-- Шапка сайта -->
 
-<header class="header">
-  <div class="header-container container">
-    <nav class="site-nav">
-      <a href="./index.html" lang="en" class="header__logo">
-        <span class="logo-accent">Web</span>Studio
-      </a>
+    <header class="header">
+      <div class="header-container container">
+        <nav class="site-nav">
+          <a href="./index.html" lang="en" class="header__logo">
+            <span class="logo-accent">Web</span>Studio
+          </a>
 
-      <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu" data-menu-button>
-        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-          <use class="icon-menu" href="./images/sprite.svg#icon-burger_40px"></use>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#icon-burger_40px"
+              ></use>
 
-          <use class="icon-cross" href="./images/sprite.svg#icon-close_40px"></use>
-        </svg>
-      </button>
+              <use
+                class="icon-cross"
+                href="./images/sprite.svg#icon-close_40px"
+              ></use>
+            </svg>
+          </button>
 
-      <div class="menu" data-menu>
-        <ul class="menu-nav list">
-          <li class="menu-nav__item">
-            <a href="./index.html" class="menu-nav__link">Студия</a>
-          </li>
-          <li class="menu-nav__item">
-            <a href="./portfolio.html" class="menu-nav__link  menu-nav__link--current">Портфолио</a>
-          </li>
-          <li class="menu-nav__item">
-            <a href="" class="menu-nav__link">Контакты</a>
-          </li>
-        </ul>
+          <div class="menu" data-menu>
+            <ul class="menu-nav list">
+              <li class="menu-nav__item">
+                <a href="./index.html" class="menu-nav__link">Студия</a>
+              </li>
+              <li class="menu-nav__item">
+                <a
+                  href="./portfolio.html"
+                  class="menu-nav__link menu-nav__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu-nav__item">
+                <a href="" class="menu-nav__link">Контакты</a>
+              </li>
+            </ul>
 
-        <ul class="menu-contacts list">
-          <li class="menu-contacts__item">
-            <a href="mailto:info@devstudio.com" class="menu-contacts__link">
-              <svg width="16" height="16" class="menu-contacts__icon icon-email">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="menu-contacts__item">
-            <a href="tel:+380961111111" class="menu-contacts__link">
-              <svg width="16  " height="16" class="menu-contacts__icon icon-phone">
-                <use href="./images/icons.svg#phone"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
-        </ul>
+            <ul class="menu-contacts list">
+              <li class="menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="menu-contacts__link">
+                  <svg
+                    width="16"
+                    height="16"
+                    class="menu-contacts__icon icon-email"
+                  >
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="menu-contacts__item">
+                <a href="tel:+380961111111" class="menu-contacts__link">
+                  <svg
+                    width="16  "
+                    height="16"
+                    class="menu-contacts__icon icon-phone"
+                  >
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-
-    </nav>
-
-
-  </div>
-</header>
+    </header>
 
     <!-- Тело main  -->
     <main class="main-body">
@@ -118,13 +144,75 @@
           <ul class="portfolio-list list">
             <li class="item">
               <div class="card">
-                <a href="" class="link"
-                  ><div class="card-thumb">
-                    <img
-                      src="./images/portfolio1.jpg"
-                      width="370"
-                      alt="Веб-сайт технокряк"
-                    />
+                <a href="" class="link">
+                  <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio1-450.webp    1x,
+                          ./images/portfolio1-450@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio1-354.webp    1x,
+                          ./images/portfolio1-354@2x.webp 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio1-370.webp    1x,
+                          ./images/portfolio1-370@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio1-450.jpg    1x,
+                          ./images/portfolio1-450@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio1-354.jpg    1x,
+                          ./images/portfolio1-354@2x.jpg 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio1-370.jpg    1x,
+                          ./images/portfolio1-370@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpg"
+                      />
+
+                      <img
+                        srcset="
+                          ./images/portfolio1-370.jpg 270w,
+                          ./images/portfolio1-354.jpg 354w,
+                          ./images/portfolio1-450.jpg 450w
+                        "
+                        src="./images/portfolio1-450.jpg"
+                        alt="Веб-сайт технокряк"
+                        class="img"
+                      />
+                    </picture>
+
                     <p class="card-description">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -142,13 +230,75 @@
             </li>
             <li class="item">
               <div class="card">
-                <a href="" class="link"
-                  ><div class="card-thumb">
-                    <img
-                      src="./images/portfolio2.jpg"
-                      width="370"
-                      alt="Постер New Orlean vs Golden Star"
-                    />
+                <a href="" class="link">
+                  <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio2-450.webp    1x,
+                          ./images/portfolio2-450@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio2-354.webp    1x,
+                          ./images/portfolio2-354@2x.webp 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio2-370.webp    1x,
+                          ./images/portfolio2-370@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio2-450.jpg    1x,
+                          ./images/portfolio2-450@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio2-354.jpg    1x,
+                          ./images/portfolio2-354@2x.jpg 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio2-370.jpg    1x,
+                          ./images/portfolio2-370@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpg"
+                      />
+
+                      <img
+                        srcset="
+                          ./images/portfolio2-370.jpg 270w,
+                          ./images/portfolio2-354.jpg 354w,
+                          ./images/portfolio2-450.jpg 450w
+                        "
+                        src="./images/portfolio2-450.jpg"
+                        alt="Постер New Orlean vs Golden Star"
+                        class="img"
+                      />
+                    </picture>
+
                     <p class="card-description">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -166,13 +316,75 @@
             </li>
             <li class="item">
               <div class="card">
-                <a href="" class="link"
-                  ><div class="card-thumb">
-                    <img
-                      src="./images/portfolio3.jpg"
-                      width="370"
-                      alt="Ресторан Seafood"
-                    />
+                <a href="" class="link">
+                  <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio3-450.webp    1x,
+                          ./images/portfolio3-450@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio3-354.webp    1x,
+                          ./images/portfolio3-354@2x.webp 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio3-370.webp    1x,
+                          ./images/portfolio3-370@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio3-450.jpg    1x,
+                          ./images/portfolio3-450@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio3-354.jpg    1x,
+                          ./images/portfolio3-354@2x.jpg 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio3-370.jpg    1x,
+                          ./images/portfolio3-370@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpg"
+                      />
+
+                      <img
+                        srcset="
+                          ./images/portfolio3-370.jpg 270w,
+                          ./images/portfolio3-354.jpg 354w,
+                          ./images/portfolio3-450.jpg 450w
+                        "
+                        src="./images/portfolio3-450.jpg"
+                        alt="Ресторан Seafood"
+                        class="img"
+                      />
+                    </picture>
+
                     <p class="card-description">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -192,11 +404,72 @@
               <div class="card">
                 <a href="" class="link">
                   <div class="card-thumb">
-                    <img
-                      src="./images/portfolio4.jpg"
-                      width="370"
-                      alt="Проект Prime"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio4-450.webp    1x,
+                          ./images/portfolio4-450@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio4-354.webp    1x,
+                          ./images/portfolio4-354@2x.webp 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio4-370.webp    1x,
+                          ./images/portfolio4-370@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio4-450.jpg    1x,
+                          ./images/portfolio4-450@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio4-354.jpg    1x,
+                          ./images/portfolio4-354@2x.jpg 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio4-370.jpg    1x,
+                          ./images/portfolio4-370@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpg"
+                      />
+
+                      <img
+                        srcset="
+                          ./images/portfolio4-370.jpg 270w,
+                          ./images/portfolio4-354.jpg 354w,
+                          ./images/portfolio4-450.jpg 450w
+                        "
+                        src="./images/portfolio4-450.jpg"
+                        alt="Проект Prime"
+                        class="img"
+                      />
+                    </picture>
 
                     <p class="card-description">
                       Технокряк это современная площадка распространения
@@ -217,11 +490,73 @@
               <div class="card">
                 <a href="" class="link">
                   <div class="card-thumb">
-                    <img
-                      src="./images/portfolio5.jpg"
-                      width="370"
-                      alt="Проект Boxes"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio5-450.webp    1x,
+                          ./images/portfolio5-450@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio5-354.webp    1x,
+                          ./images/portfolio5-354@2x.webp 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio5-370.webp    1x,
+                          ./images/portfolio5-370@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio5-450.jpg    1x,
+                          ./images/portfolio5-450@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio5-354.jpg    1x,
+                          ./images/portfolio5-354@2x.jpg 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio5-370.jpg    1x,
+                          ./images/portfolio5-370@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpg"
+                      />
+
+                      <img
+                        srcset="
+                          ./images/portfolio5-370.jpg 270w,
+                          ./images/portfolio5-354.jpg 354w,
+                          ./images/portfolio5-450.jpg 450w
+                        "
+                        src="./images/portfolio5-450.jpg"
+                        alt="Проект Boxes"
+                        class="img"
+                      />
+                    </picture>
+
                     <p class="card-description">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -241,11 +576,73 @@
               <div class="card">
                 <a href="" class="link">
                   <div class="card-thumb">
-                    <img
-                      src="./images/portfolio6.jpg"
-                      width="370"
-                      alt="Inspiration has no Borders"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio6-450.webp    1x,
+                          ./images/portfolio6-450@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio6-354.webp    1x,
+                          ./images/portfolio6-354@2x.webp 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio6-370.webp    1x,
+                          ./images/portfolio6-370@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio6-450.jpg    1x,
+                          ./images/portfolio6-450@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio6-354.jpg    1x,
+                          ./images/portfolio6-354@2x.jpg 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio6-370.jpg    1x,
+                          ./images/portfolio6-370@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpg"
+                      />
+
+                      <img
+                        srcset="
+                          ./images/portfolio6-370.jpg 270w,
+                          ./images/portfolio6-354.jpg 354w,
+                          ./images/portfolio6-450.jpg 450w
+                        "
+                        src="./images/portfolio6-450.jpg"
+                        alt="Inspiration has no Borders"
+                        class="img"
+                      />
+                    </picture>
+
                     <p class="card-description">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -265,11 +662,73 @@
               <div class="card">
                 <a href="" class="link">
                   <div class="card-thumb">
-                    <img
-                      src="./images/portfolio7.jpg"
-                      width="370"
-                      alt="Издание Limited Edition"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio7-450.webp    1x,
+                          ./images/portfolio7-450@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio7-354.webp    1x,
+                          ./images/portfolio7-354@2x.webp 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio7-370.webp    1x,
+                          ./images/portfolio7-370@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio7-450.jpg    1x,
+                          ./images/portfolio7-450@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio7-354.jpg    1x,
+                          ./images/portfolio7-354@2x.jpg 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio7-370.jpg    1x,
+                          ./images/portfolio7-370@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpg"
+                      />
+
+                      <img
+                        srcset="
+                          ./images/portfolio7-370.jpg 270w,
+                          ./images/portfolio7-354.jpg 354w,
+                          ./images/portfolio7-450.jpg 450w
+                        "
+                        src="./images/portfolio7-450.jpg"
+                        alt="Издание Limited Edition"
+                        class="img"
+                      />
+                    </picture>
+
                     <p class="card-description">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -289,11 +748,73 @@
               <div class="card">
                 <a href="" class="link">
                   <div class="card-thumb">
-                    <img
-                      src="./images/portfolio8.jpg"
-                      width="370"
-                      alt="Проект LAB"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio8-450.webp    1x,
+                          ./images/portfolio8-450@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio8-354.webp    1x,
+                          ./images/portfolio8-354@2x.webp 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio8-370.webp    1x,
+                          ./images/portfolio8-370@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio8-450.jpg    1x,
+                          ./images/portfolio8-450@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio8-354.jpg    1x,
+                          ./images/portfolio8-354@2x.jpg 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio8-370.jpg    1x,
+                          ./images/portfolio8-370@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpg"
+                      />
+
+                      <img
+                        srcset="
+                          ./images/portfolio8-370.jpg 270w,
+                          ./images/portfolio8-354.jpg 354w,
+                          ./images/portfolio8-450.jpg 450w
+                        "
+                        src="./images/portfolio8-450.jpg"
+                        alt="Проект LAB"
+                        class="img"
+                      />
+                    </picture>
+
                     <p class="card-description">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -312,12 +833,73 @@
               <div class="card">
                 <a href="" class="link">
                   <div class="card-thumb">
-                    <img
-                      src="./images/portfolio9.jpg"
-                      width="370"
-                      alt="Growing Business"
-                      class="img"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio9-450.webp    1x,
+                          ./images/portfolio9-450@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio9-354.webp    1x,
+                          ./images/portfolio9-354@2x.webp 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio9-370.webp    1x,
+                          ./images/portfolio9-370@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio9-450.jpg    1x,
+                          ./images/portfolio9-450@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio9-354.jpg    1x,
+                          ./images/portfolio9-354@2x.jpg 2x
+                        "
+                        media="(max-width:1199px)"
+                        type="image/jpg"
+                      />
+
+                      <source
+                        srcset="
+                          ./images/portfolio9-370.jpg    1x,
+                          ./images/portfolio9-370@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpg"
+                      />
+
+                      <img
+                        srcset="
+                          ./images/portfolio9-370.jpg 270w,
+                          ./images/portfolio9-354.jpg 354w,
+                          ./images/portfolio9-450.jpg 450w
+                        "
+                        src="./images/portfolio9-450.jpg"
+                        alt="Growing Business"
+                        class="img"
+                      />
+                    </picture>
+
                     <p class="card-description">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -338,62 +920,94 @@
       </section>
     </main>
 
-  <!-- Подвал сайта (Footer) -->
-  
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer-contacts">
-        <a href="./index.html" lang="en" class="logo footer-contacts__logo">
-          <span class="logo-accent">Web</span>Studio
-        </a>
-        <address class="footer-contacts__list">
-          <a href="https://goo.gl/maps/jDe5EnL38nqXM14u8" class="footer-contacts__link footer-contacts__link--address"
-            target="_blank">
-            г. Киев, пр-т Леси Украинки, 26
+    <!-- Подвал сайта (Footer) -->
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer-contacts">
+          <a href="./index.html" lang="en" class="logo footer-contacts__logo">
+            <span class="logo-accent">Web</span>Studio
           </a>
-          <a href="mailto:info@example.com" class="footer-contacts__link">
-            info@example.com
-          </a>
-  
-          <a href="tel:+380991111111" class="footer-contacts__link"> +38 099 111 11 11 </a>
-        </address>
-      </div>
-      <div class="footer-social">
-        <p class="footer__title">Присойденяйтесь</p>
-        <div class="footer-social__list">
-          <a href="https://instagram.com" target="_blank" aria-label="Ссылка на Instagram" class="footer-social__icon">
-            <svg width="20" height="20">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-          <a href="https://twitter.com" target="_blank" aria-label="Ссылка на Twitter" class="footer-social__icon">
-            <svg width="20" height="20">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-          <a href="https://fb.com" target="_blank" aria-label="Ссылка на Facebook" class="footer-social__icon">
-            <svg width="20" height="20">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          <a href="https://linkedin.com" target="_blank" aria-label="Ссылка на Linkedin" class="footer-social__icon">
-            <svg width="20" height="20">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
+          <address class="footer-contacts__list">
+            <a
+              href="https://goo.gl/maps/jDe5EnL38nqXM14u8"
+              class="footer-contacts__link footer-contacts__link--address"
+              target="_blank"
+            >
+              г. Киев, пр-т Леси Украинки, 26
+            </a>
+            <a href="mailto:info@example.com" class="footer-contacts__link">
+              info@example.com
+            </a>
+
+            <a href="tel:+380991111111" class="footer-contacts__link">
+              +38 099 111 11 11
+            </a>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p class="footer__title">Присойденяйтесь</p>
+          <div class="footer-social__list">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              aria-label="Ссылка на Instagram"
+              class="footer-social__icon"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              aria-label="Ссылка на Twitter"
+              class="footer-social__icon"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a
+              href="https://fb.com"
+              target="_blank"
+              aria-label="Ссылка на Facebook"
+              class="footer-social__icon"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              aria-label="Ссылка на Linkedin"
+              class="footer-social__icon"
+            >
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-subscribe">
+          <p class="footer__title">Подпишитесь на рассылку</p>
+          <form action="/" class="subscribe-form js-form">
+            <input
+              type="email"
+              class="subscribe-form__email"
+              name="subscribe-email"
+              placeholder="vasya@durak.com"
+              autocomplete="email"
+            />
+            <button type="submit" class="subscribe-form__submit">
+              Подписаться
+            </button>
+          </form>
         </div>
       </div>
-  
-      <div class="footer-subscribe">
-        <p class="footer__title">Подпишитесь на рассылку</p>
-        <form action="/" class="subscribe-form js-form">
-          <input type="email" class="subscribe-form__email" name="subscribe-email" placeholder="vasya@durak.com"
-            autocomplete="email" />
-          <button type="submit" class="subscribe-form__submit">Подписаться</button>
-        </form>
-      </div>
-    </div>
-  </footer>
-  <script src="./js/menu.js"></script>
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

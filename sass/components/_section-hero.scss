@@ -6,7 +6,37 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/people-in-office.jpg);
+    url('../../images/header-480.webp');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/header-480.webp');
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 960px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/header-768.webp');
+  }
+
+  @media screen and (min-width: 961px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/header-1600.webp');
+  }
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +73,6 @@
   border: none;
   min-width: 200px;
   height: 50px;
-  padding: 10px 32px;
   border-radius: 4px;
 
   color: $primary-white-color;
